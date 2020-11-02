@@ -1,0 +1,76 @@
+*{		/*Aplica a todo el documento las siguientes propiedades*/
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'PT Sans';
+}
+
+body {
+    /*background-image: url(../img/portadaManzanas.jpg);*/
+    background-color: #D8D8D8;
+  }
+  
+  .form-register {
+    background-color: white;
+    width: 420px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    color: #463333;
+    border: 5px solid #463333;
+  }
+  
+  .form-register h4 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 2px solid #463333;
+    font-size: 18px;
+    color: #463333;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  
+  .form-register a {
+    color: #463333;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #463333;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 20px 0 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .form-register .botons:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }

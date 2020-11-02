@@ -1,0 +1,290 @@
+*{		/*Aplica a todo el documento las siguientes propiedades*/
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'PT Sans';
+}
+
+.contenedor{	/*Contenedor donde va todo el contenido del Body*/
+    height: 100%;
+	width:100%;
+	max-width:100%;
+ 
+	/* Flexbox */
+	display:flex;
+    flex-flow: row wrap;
+}
+
+/*Inicia el header de la página*/
+header{	/*Barra completa del header (nav y logo)*/
+	background-color: #0d223b;
+    width: 100%;
+    padding: 20px;
+    border-bottom: #0A7AAA 2px solid;
+    display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+header .logo {	/*Circulo blanco del logo en el header*/
+	color:#fff;
+	font-size:20px;
+}
+ 
+header .logo img {	/*Imagen del logo en el header*/
+	width:50px;
+    vertical-align: top;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+ 
+header .logo a {	/*Letras del logo en el header 'Microvida'*/
+    color:#fff;
+    font-weight: bold;
+	text-decoration: none;
+	line-height:50px;
+}
+ 
+header nav {	/*Barra del menú de navegación*/
+    width:50%;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+	/* Flexbox */
+ 
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+ 
+header nav a {	/*Elementos del menú de navegación*/
+    font-weight: bold;
+    font-size: 18px;
+	color:#0d223b;
+	text-align: center;
+	text-decoration: none;
+    padding:10px;
+	flex-grow:1;
+}
+ 
+header nav a:hover { /*Hover de los elementos del menú de navegación*/
+    background:lightgray;
+    border-radius: 5px;
+    color: black;
+}
+/*Termnia el header de la página*/
+
+/*Inicia el cuerpo de la página*/
+h3{     /*Título de la sección 'Resultados'*/
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.contenedorResultados{  /*Contenedor del mapa y la tabla*/      
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 40px 0 40px;
+}
+
+.imgBacteria{   /*Contenedor de la imagen de la bacteria (izquierda)*/ 
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.imgBacteria img{   /*Imagen de la bacteria (izquierda)*/ 
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.barraPorcentaje{       /*Contenedor de los velocimetros (centro)*/ 
+    background-color: #0d223b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.barraPorcentaje img{    /*Imagen de los velocimetros (centro)*/ 
+    height: 160px;
+    width: 230px;
+}
+
+.barraPorcentaje p{     /*Texto de los velocimetros (centro)*/
+    text-align: center;
+}
+
+.barraPorcentaje .p1{    /*Texto de los velocimetros (centro)*/
+    margin: 6px;
+}
+
+.barraPorcentaje .p2{    /*Texto de los velocimetros (centro)*/
+    margin: 2px;
+}
+
+.tabla{     /*Tabla*/
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.lbTabla{   /*Fila 'Detalles'*/
+    text-align: center;
+    font-weight: bold;
+    background-color: #0d223b;
+    color: white;
+}
+
+.tabla tr td{   /*Modifica el padding de las filas y columnas*/
+    padding: 10px;
+}
+
+table tr{   /*Modifica las filas de la tabla*/
+    width: 100%;
+    background-color: whitesmoke;
+    border-collapse: collapse;
+}
+
+.tabla .btnUbicacion{     /*Modifica el botón 'Mi ubicación*/
+    margin: 30px;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+	color: white;
+	font-weight: bold;
+	background-color: #3399DB;
+	border-radius: 5px;
+}
+
+.tabla .btnUbicacion:hover{     /*Hover del botón de 'Mi ubicación'*/
+    background-color: #1b6597;
+}
+
+table .iconoTabla{  /*Da formato a los iconos de la tabla*/
+    width: 5px;
+}
+
+.met{      /*Título de la sección 'Método de eliminación'*/
+    margin-top: 25px;
+}
+
+.metodoEliminacion{     /*Contenedor de la sección 'Método de eliminación'*/
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.modPurif{     /*Formato de la primera fila en la tabla 'Modelo purificación' (izquierda)'*/
+    background-color: #0d223b;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.tablaPurificacion table{      /*Formato de la primera fila en la tabla 'Modelo purificación' (izquierda)'*/
+    padding: 15px;
+}
+
+.tablaPurificacion table tr td{     /*Formato de la primera fila en la tabla 'Modelo purificación' (izquierda)'*/
+    padding: 10px;
+}
+
+.tablaMicroorganismos table{    /*Formato de la primera fila en la tabla 'Microorganismos' (derecha)'*/
+    padding: 20px;
+}
+
+.tablaMicroorganismos table tr td{      /*Formato de la primera fila en la tabla 'Microorganismos' (derecha)'*/
+    padding: 10px;
+}
+/*Termina el cuerpo de la página*/
+
+/*Ajusta contenido*/
+@media screen and (max-width: 800px) { /*Si la pantalla llega a 800px de ancho, ajusta el contenido*/
+	.contenedor {	/*Ajusta todo el contendio en el body a manera de columnas (filas en css)*/
+		flex-direction:column;
+	}
+ 
+	header {	/*Ajusta todo el header a manera de columnas (filas en html)*/
+		flex-direction:column;
+		padding:0;
+	}
+ 
+	header .logo {	/*Ajusta al logo sobre el header*/
+		margin:20px 0;
+	}
+ 
+	header nav {	/*Ajusta toda la barra de navegación para que ocupe el 100% del nuevo tamaño de la pantalla*/
+		width: 100%;
+	}
+
+    .tabla{    /*Ajusta la tabla*/
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin:auto;
+        width: 90%;
+    }
+
+    .contenedorResultados{  /*Modifica el contenedor de 'Resultados'*/
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+
+    .imgBacteria{   /*Modifica el contenedor de la imagen de la bacteria (izquierda)*/
+        width: 80%;
+        flex-direction: column;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgBacteria img{   /*Modifica la imagen de la bacteria (izquierda)*/
+        width: 100%;
+        border-radius: 10px;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .barraPorcentaje{   /*Modifica el contenedor de los velocimetros (centro)*/
+        width: 80%;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .metodoEliminacion{     /*Modifica el contenedor de la sección 'Método de eliminación'*/
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+}

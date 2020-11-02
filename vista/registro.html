@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/registro.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
+        <script src="prefix.js"></script>
+        <link rel="shortcut icon" href="img/logoParroquia2.png">    <!--Icono para la pestaña-->
+        <title>ValleShop</title>
+</head>
+<body>
+    <form class="form-register" action="../controlador/guardaUsuario.php" method="POST">
+        <h4>Formulario de Registro</h4>
+        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+        <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+        <input class="controls" type="text" name="nomUsuario" id="nomUsuario" placeholder="Ingrese un nombre de usuario" required>
+        <input class="controls" type="password" name="pass" id="pass" placeholder="Ingrese su Contraseña" required pattern="[a-z]{1,15}">
+        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+        <input class="botons" type="submit" value="Registrar">
+        <p><a href="login.html">¿Ya tengo Cuenta?</a></p>
+    </form>
+</body>
+</html>

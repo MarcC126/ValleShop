@@ -1,0 +1,344 @@
+*{		/*Aplica a todo el documento las siguientes propiedades*/
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'PT Sans';
+}
+
+.contenedor{	/*Contenedor donde va todo el contenido del Body*/
+    height: 100%;
+	width:100%;
+	max-width:100%;
+ 
+	/* Flexbox */
+	display:flex;
+    flex-flow: row wrap;
+}
+
+/*Inicia el header de la página*/
+header{	/*Barra completa del header (nav y logo)*/
+	background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    border-bottom: #463333 2px solid;
+    display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+header .logo {	/*Circulo blanco del logo en el header*/
+	color:#fff;
+	font-size:25px;
+}
+ 
+header .logo img {	/*Imagen del logo en el header*/
+	width:60px;
+    vertical-align: top;
+    background-color: white;
+    border-radius: 50%;
+}
+ 
+header .logo a {	/*Letras del logo en el header 'Microvida'*/
+    color:#463333;
+    font-weight: bold;
+	text-decoration: none;
+	line-height:50px;
+}
+ 
+header nav {	/*Barra del menú de navegación*/
+    width:50%;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+	/* Flexbox */
+ 
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+ 
+header nav a {	/*Elementos del menú de navegación*/
+    font-weight: bold;
+    font-size: 18px;
+	color:#463333;
+	text-align: center;
+	text-decoration: none;
+    padding:10px;
+	flex-grow:1;
+}
+ 
+header nav a:hover { /*Hover de los elementos del menú de navegación*/
+    background:#ebd4d4;
+    border-radius: 5px;
+    color: black;
+}
+/*Termnia el header de la página*/
+
+/*Inicia el cuerpo de la página*/
+.imagenFondo{	/*Primera imagen (Manos con chorro de agua)*/
+	height: 350px;
+	width: 100%;
+	margin-bottom: -50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../img/parroquia2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, .5);
+	background-blend-mode: darken;
+}
+
+.imagenFondo p{		/*Leyenda 'Microvida "Agua limpia y accesible para todos"' sobre la imagen anterior*/
+	text-decoration: none;
+	font-size: 40px;
+	color: white;
+	white-space: pre-line;
+	text-align: center;
+	margin-top: -100px;
+}
+
+.tarjetaPrincipal{	/*Primera tarjeta descriptiva 'Agua residual'*/
+	height: auto;
+	width: 50%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color:#fff;
+	border: solid 2px lightgray;
+	margin: auto;
+	
+}
+
+.txtTarjetaPrincipal{	/*Text del lado derecho de la primera tarjeta descriptiva*/
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	align-content: center;
+}
+
+.txtTarjetaPrincipal h4{	/*Título de la primera tarjeta descriptiva*/
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	margin: auto;
+}
+
+.busqueda{
+	margin-left: 40px;
+	margin-right: 40px;
+	display: flex;
+}
+
+#cbCategorias{ 	/*Combobox de las categorías*/
+	height: 30px;
+	width: 120px;
+	margin: 5px;
+	font-size: 17px;
+	border-radius: 5px;
+	background-color: #F4F4F4;
+	border:0 #F4F4F4;
+}
+
+#txtBusqueda{
+	height: 30px;
+	width: 260px;
+	margin: 5px;
+	font-size: 17px;
+	border-radius: 5px;
+	background-color: #F4F4F4;
+	border:0 #F4F4F4;
+}
+
+#btnBusqueda{
+	height: 30px;
+	width: 80px;
+	margin-left: 2px;
+	padding: 5px;
+	font-size: 17px;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #39BD48;
+	border:0 #39BD48;
+}
+
+.esqueletoTarjetas{		/*Contenedor de las tarjetas de los vasos con agua*/
+	height: auto;
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+}
+
+.tarjetas{	/*Tarjertas de los vasos con agua (forma de tarjeta)*/
+	width: 250px;
+	border: #0d223b 2px;
+	border-radius: 14px;
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	flex-wrap: nowrap;
+}
+
+.imgTerjeta img{	/*Imágenes de las tarjetas con los vasos con agua*/
+	height: 190px;
+	width: 100%;
+	margin-bottom: 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.textoTarjeta{	/*Texto de las tarjetas con los vasos con agua*/
+	height: 150px;
+	width: 100%;
+	background-color: #F1F1F1;
+	margin-top: -5px;
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+}
+
+.textoTarjeta p{
+	padding: 3px 10px 0px 10px;
+}
+
+.textoTarjeta h3{
+	text-align: center;
+	padding-bottom: 5px;
+	background-color: #000;
+	color: #fff;
+}
+
+.precioTarjeta{
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	padding: 15px 5px 0px 5px;
+	background-color: #000;
+	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+}
+
+.precioTarjeta p{
+	font-size: 30px;
+	font-weight: bold;
+	padding: 0px 0px 5px 10px;
+	color: #39BD48;
+	text-align: center;
+	margin: auto;
+}
+
+.precioTarjeta h3{
+	margin: auto;
+}
+
+footer{
+	height: 80px;
+	color: #fff;
+	border-top: #463333 2px solid;
+	background-color: #000;
+}
+
+#contenido{
+	margin-top: 15px;
+    float: right;
+    padding-top: 10px;
+    margin-right: 15px;
+}
+
+#contenido a{   /*Estilo a la etiqueta a del footer*/
+    cursor: no-drop;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#iconos{    /*Modifica la ubicación de los iconos de las redes sociales en el footer*/
+    left: 0;
+    margin-top: 25px;
+}
+
+#iconos img{    /*Modifica los iconos de las redes sociales*/
+    border-radius: 20%;
+    margin-right: 20px;
+}
+
+/*Termina el cuerpo de la página*/
+
+/*Ajusta contenido*/
+@media screen and (max-width: 800px) { /*Si la pantalla llega a 800px de ancho, ajusta el contenido*/
+	.contenedor {	/*Ajusta todo el contendio en el body a manera de columnas (filas en css)*/
+		flex-direction:column;
+	}
+ 
+	header {	/*Ajusta todo el header a manera de columnas (filas en html)*/
+		flex-direction:column;
+		padding:0;
+	}
+ 
+	header .logo {	/*Ajusta al logo sobre el header*/
+		margin:20px 0;
+	}
+ 
+	header nav {	/*Ajusta toda la barra de navegación para que ocupe el 100% del nuevo tamaño de la pantalla*/
+		width: 100%;
+	}
+
+	.cajaImagen img{	/*Ajusta la medida de la imagen de la nube para que se ajuste a la nueva pantalla*/
+		width: 250px;
+	}
+
+	.cajaSubir{		/*Ajusta la medida del contenedor del selector de archivos para que se ajuste a la nueva pantalla*/
+		width: 100%;
+	}
+	
+	.tarjetaPrincipal{	/*Ajusta la medida de la tarjeta informativa principal para que se ajuste a la nueva pantalla*/
+		width: 90%;
+		flex-direction: column;
+		margin: auto;
+	}
+
+	.txtTarjetaPrincipal h4{	/*Centra el título en la tarjeta informativa principal para que se ajuste al parrafo*/
+		text-align: center;
+	}
+
+	#txtBusqueda{
+		height: 30px;
+		width: 240px;
+		margin: 5px;
+	}
+
+	.busqueda{
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#formBusqueda{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.esqueletoTarjetas{
+		flex-wrap: wrap;
+	}
+
+	.tarjetas{
+		width: 70%;
+	}
+
+	.textoTarjeta p{
+		margin-top: 15px;
+	}
+}
